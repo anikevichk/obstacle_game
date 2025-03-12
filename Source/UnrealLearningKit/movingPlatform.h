@@ -23,24 +23,22 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(EditAnywhere)
-	FVector cube_location = FVector(-13850.0, -2840.0, 4050.0);
-
-	UPROPERTY(EditAnywhere)
-	FVector current_location;
-
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Movement")
 	FVector start_location;
 
-	//-----------------------------------
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	FVector cube_location;
 
-	UPROPERTY(EditAnywhere, Category = "Distination")
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	FVector move_direction = FVector(1, 0, 0); 
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
 	float speed = 3;
 
-	UPROPERTY(EditAnywhere, Category = "Distination")
-	float distination = -1;
-
-	UPROPERTY(EditAnywhere, Category = "Distination")
+	UPROPERTY(EditAnywhere, Category = "Movement")
 	float move_distance = 500;
+
+	UPROPERTY(EditAnywhere, Category = "Appearance")
+	FVector platform_size = FVector(2, 2, 1);
 };
                            
