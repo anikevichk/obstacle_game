@@ -38,7 +38,21 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float move_distance = 500;
 
-	UPROPERTY(EditAnywhere, Category = "Appearance")
-	FVector platform_size = FVector(2, 2, 1);
+	UPROPERTY(EditAnywhere, Category = "Rotation")
+	FRotator rotation_speed= FRotator(0, 0, 0);
+
+	UPROPERTY(EditAnywhere)
+	FVector moving_platform_size = FVector(1, 1, 2);
+
+	UPROPERTY(EditAnywhere)
+	FVector pushing_platform_size = FVector(1, 1, 1);
+
+	void MovePlatform(float DeltaTime);
+	void RotatePlatform(float DeltaTime);
+
+	void SetPushingPlatforms();
+	void SetUpDownPlatforms();
+	void SetRigthLeftPlatforms();
+	void SetRotationPlatforms();
 };
                            
