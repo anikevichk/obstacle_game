@@ -120,6 +120,11 @@ void AmovingPlatform::SetRotationPlatforms(){
             Platform->move_distance = 0; 
 			Platform->speed = 0; 
 			Platform->rotation_speed = FRotator(0, 90, 0);
+
+			if (i>5){
+				if (i%2 == 0){Platform->rotation_speed = FRotator(0, 180, 0); }
+				else {Platform->rotation_speed = FRotator(0, 220, 0);}
+			}
 			
         }
     }
