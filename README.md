@@ -1,4 +1,5 @@
 # Obstacle Game – 3D Obstacle Platformer 
+[Gameplay Video](https://www.youtube.com/watch?v=vfYILNcRlrI)
 
 **Obstacle Assault** is a 3D arcade-style game where the player navigates an obstacle course using timing and precision. All platforms are controlled via C++ and behave differently based on their tags and logic setup.
 
@@ -27,3 +28,6 @@
 - Large platforms that move forward to push the player
 - Scaled and timed using array index for increasing difficulty
 
+## Controls
+- **W / A / S / D** — Move forward, left, backward, and right
+- **Spacebar** — Jump
